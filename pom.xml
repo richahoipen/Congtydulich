@@ -1,13 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>001</groupId>
-  <artifactId>CongTyDuLich</artifactId>
+  <groupId>teo.com</groupId>
+  <artifactId>KTTK</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <configuration>
-            <transformers>
-               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>your.package.MainClass</mainClass>
-               </transformer>
-            </transformers>
-         </configuration>
+  <dependencies>
+		<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>6.2.6.Final</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.mariadb.jdbc</groupId>
+	    <artifactId>mariadb-java-client</artifactId>
+	    <version>3.1.4</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>com.microsoft.sqlserver</groupId>
+	    <artifactId>mssql-jdbc</artifactId>
+	    <version>12.2.0.jre11</version>
+	</dependency>
+
+  </dependencies>
 </project>
